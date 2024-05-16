@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import getCurrentTimerInfo from "../utils/getCurrentTimerInfo";
-import goToNextTimer from "../utils/GoToNexTimer";
+import goToNextTimer from "../utils/goToNextTimer";
 import playSound from "../../utils/playSound";
 
 function secondsToTimer(seconds) {
