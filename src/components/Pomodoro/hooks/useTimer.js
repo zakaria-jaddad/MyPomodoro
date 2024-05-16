@@ -76,7 +76,7 @@ export default function useTimer(seconds = 0) {
         soundVolume: parseInt(soundInfo.alarmSoundVolume) / 100,
       });
       setIsTimerRunning(false);
-      const activeTimer = goToNextTimer({
+        goToNextTimer({
         timerSettings: timerSettings,
         timers: timers,
         dispatch,
