@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/public//icons/windowIcon.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Pomodoro</title>
+    <script
+      defer
+      type="module"
+      src="./public/static/scripts/preloader.js"
+    ></script>
+  </head>
+  <body class="bg-main-bg-color">
+    <div style="position: relative">
+      <div id="preloader" style="display: none">
+        <div class="scene">
+          <div class="cube-wrapper">
+            <div class="cube">
+              <div class="cube-faces">
+                <div class="cube-face shadow"></div>
+                <div class="cube-face bottom"></div>
+                <div class="cube-face top"></div>
+                <div class="cube-face left"></div>
+                <div class="cube-face right"></div>
+                <div class="cube-face back"></div>
+                <div class="cube-face front"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="root"></div>
+    </div>
+    <script async type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

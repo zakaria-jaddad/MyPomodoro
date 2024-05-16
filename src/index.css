@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Main Root colors varibales  */
+:root {
+  --main-bg-color: #3c3633;
+  --main-text-color: #eeedeb;
+  --second-text-color: #1f1717;
+  --third-text-color: #747264;
+  --active-button: #84c733cc;
+}
+
+@font-face {
+  font-family: virgil;
+  src: url(/public/fonts/Virgil-font.woff2);
+}
+
+* {
+  transition: color 0.2s, background-color 0.2s;
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  -moz-transition: color 0.2s, background-color 0.2s;
+  -ms-transition: color 0.2s, background-color 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s;
+}
+
+

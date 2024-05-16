@@ -1,0 +1,60 @@
+.imso_mh__live-ind-mask {
+  overflow: hidden;
+}
+
+.imso_mh__live-ind-wrap {
+  width: 200%;
+  line-height: 0;
+  animation: indicator-wrapper-animation 1.6s 1s infinite alternate
+    cubic-bezier(0.21, 0.85, 0.34, 0.98);
+}
+
+.live-ind-fixed {
+  width: 1px;
+}
+
+.live-ind-fixed,
+.imso_mh__live-ind-var {
+  height: 2px;
+  float: left;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.imso_mh__live-ind-var {
+  width: 50%;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: live-indicator-length-animation 1.6s 1s infinite alternate
+    cubic-bezier(0.87, 0.01, 0.87, 0.5);
+}
+
+@keyframes indicator-wrapper-animation {
+  0% {
+    -webkit-transform: translateX(0%);
+    margin-left: 0px;
+  }
+
+  50% {
+    -webkit-transform: translateX(0%);
+    margin-left: 0px;
+  }
+
+  100% {
+    -webkit-transform: translateX(50%);
+    margin-left: -2px;
+  }
+}
+
+@keyframes live-indicator-length-animation {
+  0% {
+    -webkit-transform: scaleX(0);
+  }
+
+  50% {
+    -webkit-transform: scaleX(1);
+  }
+}
