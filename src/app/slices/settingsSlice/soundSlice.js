@@ -6,7 +6,7 @@ const KEY = "sound";
 const initialState = getDataFromLocalStorage(KEY, {
   alarmSound: {
     alarmName: "twitch",
-    alarmSound: "/public/sounds/twitch.mp3",
+    alarmSound: "./sounds/twitch.mp3",
   },
   alarmSoundVolume: 50,
 }
