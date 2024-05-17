@@ -4,28 +4,25 @@ import useTaskForm from "./hooks/useToggleTaskForm";
 import Todoist from "../../../../api/todoist/Todoist";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { toast } from "sonner";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import TaskSkelaton from "./ui/TaskSkelaton";
 
 const Tasks = () => {
   const { taskForm, showTaskForm, hideTaskForm } = useTaskForm();
   const [tasks, setTasks] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const getTasks = async () => {
-      const tasks = await Todoist.getTasks();
-      if (!tasks.isSuccess) {
-        toast.error(tasks.message);
+      const { isSuccess, message, tasks } = await Todoist.getTasks();
+      if (!isSuccess) {
+        toast.error(message);
         return;
       }
-      setTasks(tasks.tasks);
+      setTasks(tasks);
       setIsLoading(false);
       return;
     };
-    if (tasks.length === 0) {
-      setIsLoading(true);
-    }
     getTasks();
     window.addEventListener("online", () => {
       getTasks();
