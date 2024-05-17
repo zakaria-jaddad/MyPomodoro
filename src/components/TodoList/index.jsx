@@ -10,8 +10,8 @@ const TodoList = ({ isUserAuthenticated }) => {
   return (
     <main className="antialiased mx-auto text-main-text-color">
       <div className="max-w-lg mx-auto p-8 shadow" ref={taskFormRef}>
-        <div className="flex flex-row justify-between items-center">
-          <div className="flex justify-between items-center w-full h-[60px] relative">
+        <div className="flex flex-row justify-center items-center">
+          <div className="transition-all duration-300 flex justify-between items-center w-[100%] sm:w-[70%] md:w-full h-[60px] relative">
             <div className="flex justify-between items-center border-b w-full h-[60px]">
               <h1 className="text-main-text-color text-xl font-semibold">
                 Tasks list
@@ -38,7 +38,7 @@ const TodoList = ({ isUserAuthenticated }) => {
 
             {/* Arrow Conect To */}
             {isUserAuthenticated === true ? null : (
-              <div className="absolute left-[92%] bottom-[-92%]">
+              <div className="absolute left-[92%] bottom-[-92%] hidden sm:block">
                 <div className="relative h-full w-full">
                   <div>
                     <Arrow
