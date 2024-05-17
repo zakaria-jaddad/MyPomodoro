@@ -1,43 +1,54 @@
+import piano from "/public/sounds/piano.mp3";
+import scarey from "/public/sounds/scarey.mp3";
+import twitch from "/public/sounds/twitch.mp3";
+import victory1 from "/public/sounds/victory-1.mp3";
+import victory2 from "/public/sounds/victory-2.mp3";
+import quack from "/public/sounds/quack.mp3";
+import lofi1 from "/public/sounds/lofi-1.mp3";
+import lofi2 from "/public/sounds/lofi-2.mp3";
+import timeToStop from "/public/sounds/time-to-stop.mp3";
+import drums1 from "/public/sounds/drums-1.mp3";
+
 const alarmSounds = [
   {
     alarmName: "piano",
-    alarmSound: "/sounds/piano.mp3",
+    alarmSound: piano,
   },
   {
     alarmName: "scarey",
-    alarmSound: "/sounds/scarey.mp3",
+    alarmSound: scarey,
   },
   {
     alarmName: "twitch",
-    alarmSound: "/sounds/twitch.mp3",
+    alarmSound: twitch,
   },
   {
     alarmName: "victory",
-    alarmSound: "/sounds/victory-1.mp3",
+    alarmSound: victory1,
   },
   {
     alarmName: "duck",
-    alarmSound: "/sounds/quack.mp3",
+    alarmSound: quack,
   },
   {
     alarmName: "lofi",
-    alarmSound: "/sounds/lofi-1.mp3",
+    alarmSound: lofi1,
   },
   {
     alarmName: "lofi",
-    alarmSound: "/sounds/lofi-2.mp3",
+    alarmSound: lofi2,
   },
   {
     alarmName: "did it",
-    alarmSound: "/sounds/victory-2.mp3",
+    alarmSound: victory2,
   },
   {
     alarmName: "stop",
-    alarmSound: "/sounds/time-to-stop.mp3",
+    alarmSound: timeToStop,
   },
   {
     alarmName: "drums",
-    alarmSound: "/sounds/drums-1.mp3",
+    alarmSound: drums1,
   },
 ];
 
