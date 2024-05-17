@@ -8,6 +8,7 @@
 */
 function playSound({ sound, soundVolume = 1 }) {
   const currentAudio = new Audio(sound);
+  console.log(currentAudio);
   // set current audio volume
   currentAudio.volume = soundVolume;
   currentAudio.play();

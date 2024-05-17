@@ -6,7 +6,6 @@ import useTheme from "./hooks/useTheme";
 import useAuthentication from "./hooks/useAuthentication";
 import { Toaster } from "sonner";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
 
 function App() {
   const isSettings = useSelector((state) => state.settings.settingsPage);
